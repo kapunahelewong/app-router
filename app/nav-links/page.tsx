@@ -5,8 +5,9 @@ import { builder } from "@builder.io/sdk";
 builder.init("2b5ffc858d74425485135b88d2fc307a");
 
 export default async function Home() {
+  // This is an example of how to use a Builder data model
   const links = await builder.getAll("nav-link", { prerender: false });
-  //   console.log("Rendering nav links:", links);
+
   return (
     <>
       <header>
